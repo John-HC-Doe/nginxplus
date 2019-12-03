@@ -18,7 +18,12 @@ if you run SSL on nginxplus, just add one more "-p 443:443"<br>
 curl http://localhost
 ```
 
-4. Modify the content of conf.d and reload nginx process
+4. Modify the content of conf.d and reload nginx process<br>
+Check the config syntax before reloading
+```
+docker exec nginxplus1 nginx -t
+```
+Reload nginx process
 ```
 docker exec nginxplus1 nginx -s reload
 ```
