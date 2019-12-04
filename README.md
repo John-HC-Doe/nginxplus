@@ -1,5 +1,16 @@
-# Custom nginx-plus docker image build
-
+# Custom NGINX Plus docker image build
+## Some of the advanced features that NGINX Plus can provide
+* Load balancing + Session persistence based on cookies *
+* Active health checks on status code and response body
+* Service discovery using DNS
+* Caching static content, API caching with cache‑purging
+* HA: Keepalived + VRRP, state sharing for features including sticky‑Learn session persistence
+* JWT authentication for APIs and OpenID Connect single sign‑on (SSO)
+* NGINX WAF dynamic module
+* Built‑in, real‑time graphical dashboard
+* Integrate with ELK
+* Streaming Media
+* JavaScript Module for NGINX Plus
 ## Build nginxplus docker image
 Place the Dockerfile in to the current directory, together with nginx-repo.crt and nginx-repo.key
 ```
